@@ -3,15 +3,15 @@ label: External articles
 migration_tags:
   - Drupal 6
 deriver: Drupal\node\Plugin\migrate\D6NodeDeriver
-migration_group: testgroup
+migration_group: test2group
 source:
   plugin: d6_node
-  node_type: page
+  node_type: blog
 process:
 #  nid and vid commented out will allow them to autoincrement. Safe as long
 #    as nothing else is referencing them.
-#  nid: nid
-#  vid: vid
+  nid: nid
+  vid: vid
   type:
     plugin: default_value
     default_value: article
